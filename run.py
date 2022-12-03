@@ -1,4 +1,4 @@
-from json_parser import JsonParser
+from src.json_parser import JsonParser
 
 parser = JsonParser("./tables.json")
 parser.read()
