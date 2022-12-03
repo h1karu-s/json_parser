@@ -12,7 +12,7 @@ class TestCSVPrinter(unittest.TestCase):
     
     def test_get(self):
         parser = JsonParser("./tables.json")
-        flag = parser.read()
+        parser.read()
         data = parser.get_json()
         self.assertEqual(5, len(data))
     
