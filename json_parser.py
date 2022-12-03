@@ -9,7 +9,8 @@ class JsonParser:
             with open(self.name) as f:
               self.data = json.load(f)
             return "Ok"
-        except:
+        except Exception as e:
+            print(e)
             return "Error"
       
     def get_type(self):
