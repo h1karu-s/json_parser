@@ -19,8 +19,8 @@ class TestCSVPrinter(unittest.TestCase):
     def test_get_type(self):
         parser = JsonParser("./tables.json")
         parser.read()
-        type = parser.get_type()
-        self.assertEqual("list", type)
+        t = parser.get_type()
+        self.assertEqual("list", t)
 
 
 
